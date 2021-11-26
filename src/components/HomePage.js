@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import QuestionCard from "./QuestionCard";
 import axios from "axios";
 import Category from "./Category";
+// import Timer from "./Timer";
 
 export default class HomePage extends React.Component {
   state = {
@@ -78,9 +80,9 @@ export default class HomePage extends React.Component {
   render() {
     const { data, value } = this.state;
 
-    console.log(this.state.data);
-    console.log(this.state.corrAns);
-    console.log(this.state.selected);
+    // console.log(this.state.data);
+    // console.log(this.state.corrAns);
+    // console.log(this.state.selected);
     // console.log(this.state.data[0].correct_answer);
 
     return (
@@ -103,6 +105,7 @@ export default class HomePage extends React.Component {
             <div className="col-md-4"> </div>
           </div>
         </div>
+
         {data.length != 0 ? (
           <QuestionCard
             data={data[this.state.qNo]}
@@ -135,6 +138,7 @@ export default class HomePage extends React.Component {
         <div style={{ display: this.state.display }}>
           <h1> Your Score is {this.state.corrAns} /10</h1>
           <p> play again choosing different category </p>
+          <a href="https://convegenius.herokuapp.com/">Play again</a>
         </div>
       </React.Fragment>
     );
