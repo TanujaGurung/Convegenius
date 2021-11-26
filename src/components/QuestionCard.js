@@ -24,7 +24,6 @@ const QuestionCard = (props) => {
                           name="role"
                           value={props.data.incorrect_answers[0]}
                           onClick={(e) => props.handleInput(e)}
-                          style={{ backgroundColor: "#e02162" }}
                         />
                       </label>{" "}
                     </div>
@@ -36,7 +35,6 @@ const QuestionCard = (props) => {
                           name="role"
                           value={props.data.incorrect_answers[1]}
                           onClick={(e) => props.handleInput(e)}
-                          style={{ backgroundColor: "#e02162" }}
                         />
                       </label>{" "}
                     </div>
@@ -50,7 +48,6 @@ const QuestionCard = (props) => {
                           name="role"
                           value={props.data.correct_answer}
                           onClick={(e) => props.handleInput(e)}
-                          style={{ backgroundColor: "#e02162" }}
                         />
                       </label>{" "}
                     </div>
@@ -62,7 +59,6 @@ const QuestionCard = (props) => {
                           name="role"
                           value={props.data.incorrect_answers[1]}
                           onClick={(e) => props.handleInput(e)}
-                          style={{ backgroundColor: "#e02162" }}
                         />
                       </label>{" "}
                     </div>
