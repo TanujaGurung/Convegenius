@@ -69,13 +69,6 @@ const QuestionCard = (props) => {
                   </div>
                 </div>
               </form>
-              <div className="container justify-content-center">
-                <input
-                  type="button"
-                  className="btn btn-primary"
-                  value="Submit"
-                />
-              </div>
             </div>
           </div>
         ) : (
